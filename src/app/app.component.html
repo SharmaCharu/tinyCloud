@@ -1,4 +1,7 @@
 <h1>TinyMCE </h1>
   <form method="post">
-    <textarea id="mytextarea">Hello, World!</textarea>
+    <textarea id="mytextarea">{{a}}</textarea>
   </form>
+  <button (click)="get_editor_content()">Get content</button> 
+  <br>
+  <input class="box" type="text" [(ngModel)]="a"  ngDefaultControl >

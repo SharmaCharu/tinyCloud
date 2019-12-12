@@ -8,9 +8,18 @@ import { TinyServiceService } from './tiny-s.service';
 })
 export class AppComponent {
   title = 'TinyCloud';
+  a;
   constructor(private tinyService:TinyServiceService){}
   ngOnInit(){
   
 this.tinyService.get();
+
+
   }
+
+  get_editor_content(){
+    this.a=this.tinyService.get_editor_content();
+  }
+
+ 
 }
