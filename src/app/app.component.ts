@@ -20,6 +20,8 @@ this.tinyService.get();
   get_editor_content(){
     this.a=this.tinyService.get_editor_content();
   }
-
+  set_editor_content(a){
+    this.a=this.tinyService.set_editor_content(a);
+  }
  
 }

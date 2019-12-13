@@ -25,5 +25,9 @@ export class TinyServiceService {
     var text = tinymce.activeEditor.getContent();
     return text;
   }
-
+  set_editor_content(a){
+    var con = tinymce.activeEditor.setContent(a);
+    console.log(a);
+    return con;
+  }
 }
